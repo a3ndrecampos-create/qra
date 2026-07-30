@@ -1,7 +1,7 @@
 package com.rotacerta.core.domain
 
 import com.rotacerta.core.data.Delivery
-import com.rotacerta.core.data.RouteSortDirection
+import com.rotacerta.core.domain.RouteSortDirection
 import kotlin.math.atan2
 import kotlin.math.cos
 import kotlin.math.sin
