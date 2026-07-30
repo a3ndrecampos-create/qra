@@ -38,9 +38,9 @@ class MotoboyViewModel(private val repo: MotoboyRepository) : ViewModel() {
         repo.connectionState,
         repo.status,
         repo.currentOffer,
-        _activeDeliveries
-    ) { connState, status, offer, deliveries ->
-        val login = _loginInfo.value
+        _activeDeliveries,
+        _loginInfo
+    ) { connState, status, offer, deliveries, login ->
         MotoboyUiState(
             loggedIn = login != null,
             motoboyId = login?.first.orEmpty(),
